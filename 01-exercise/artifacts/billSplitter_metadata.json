@@ -6,26 +6,36 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"name": "UnevenDivision",
+				"type": "error"
+			},
+			{
+				"inputs": [],
+				"name": "ZeroParticipants",
+				"type": "error"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "salary",
+						"name": "totalExpenses",
 						"type": "uint256"
 					},
 					{
 						"internalType": "uint256",
-						"name": "performanceRating",
+						"name": "numberOfPeople",
 						"type": "uint256"
 					}
 				],
-				"name": "calclulatePayroll",
+				"name": "billing",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
 				"inputs": [],
-				"name": "result",
+				"name": "splitExpenses",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -50,7 +60,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"01-exercise/02-payroll.sol": "payroll"
+			"01-exercise/03-billSplitter.sol": "billSplitter"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -64,12 +74,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"01-exercise/02-payroll.sol": {
-			"keccak256": "0xc40172d742bf9fbf8ac8a0b9a2afe4132b4bb59e422475d6b1b9e65f63e452bb",
+		"01-exercise/03-billSplitter.sol": {
+			"keccak256": "0xee04ddf7f14f54a633e9a2ccc03ed0d34a535c0531f63d87ab5bc86dc108fdef",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://3d4e5d26a00c67b455e17508aeec720331021795ba5286f81f863cc2ac5c508f",
-				"dweb:/ipfs/QmQ4PoXigLhp1WYccEJybRjdiT8pYbkCoXji4ENwNn28W3"
+				"bzz-raw://7c4bdfcfcdfecb4b18ec97f10ffeed036058d05a8a50df049ad5aa624b195902",
+				"dweb:/ipfs/Qmc5sQkxfeMbemqKgwWdNpS4GvCq5WzJP976egWGCFW7MV"
 			]
 		}
 	},

@@ -61,7 +61,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"compoundInterestCalculator.sol": "compaundInterestCalculator"
+			"01-exercise/01-compoundInterestCalculator.sol": "compaundInterestCalculator"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -75,7 +75,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"compoundInterestCalculator.sol": {
+		"01-exercise/01-compoundInterestCalculator.sol": {
 			"keccak256": "0x72c261423d99fbe5d662a5062e6ee038cbada54065ac5b98ae4580c930c7c5af",
 			"license": "MIT",
 			"urls": [
