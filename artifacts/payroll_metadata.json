@@ -1,0 +1,77 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "salary",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "performanceRating",
+						"type": "uint256"
+					}
+				],
+				"name": "calclulatePayroll",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "result",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"payroll.sol": "payroll"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"payroll.sol": {
+			"keccak256": "0xc40172d742bf9fbf8ac8a0b9a2afe4132b4bb59e422475d6b1b9e65f63e452bb",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://3d4e5d26a00c67b455e17508aeec720331021795ba5286f81f863cc2ac5c508f",
+				"dweb:/ipfs/QmQ4PoXigLhp1WYccEJybRjdiT8pYbkCoXji4ENwNn28W3"
+			]
+		}
+	},
+	"version": 1
+}
