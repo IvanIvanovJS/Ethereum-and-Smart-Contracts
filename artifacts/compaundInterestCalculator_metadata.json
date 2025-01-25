@@ -76,11 +76,11 @@
 	},
 	"sources": {
 		"compoundInterestCalculator.sol": {
-			"keccak256": "0xa2d0c41cba97a17b20a8b0dfc0c50367cbb5aa193eaad3d7856e07af2ba40c64",
+			"keccak256": "0x72c261423d99fbe5d662a5062e6ee038cbada54065ac5b98ae4580c930c7c5af",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0c0a23d9ef247e6946c69f6f1f3303d204d1ca394fdf4ec8fec898d9ed5b5d12",
-				"dweb:/ipfs/Qmak6KWKhr1Node4Lo3oZY4CtsZ3pdGaRYcZbQyY4sG96P"
+				"bzz-raw://70413b3a959cad53284a37a38155bb6d3c880d38c879def197a03285bec5897f",
+				"dweb:/ipfs/QmNcRKPrXpmoJXSFxtic2RKmyS1kdpqJHgxzKJ3GcukWS6"
 			]
 		}
 	},
