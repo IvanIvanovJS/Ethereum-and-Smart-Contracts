@@ -1,0 +1,70 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "TooYoungToVote",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "age",
+						"type": "uint256"
+					}
+				],
+				"name": "eligibility",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/01-exercises/06-votingEligibilityChecker.sol": "voting"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/01-exercises/06-votingEligibilityChecker.sol": {
+			"keccak256": "0x8840b7057c9c66d0e139f67bb9eca17742aa30a3cf5a2d6fb6dd21ed086c8bc1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://54290921e972e899af9a21c393f38e73f1ec2a39f5199363de7bd431f4b72d9b",
+				"dweb:/ipfs/QmbxRqbJN4KUfWPi3mfqMvyijZKJsvy3tXDdwp3heeY2CD"
+			]
+		}
+	},
+	"version": 1
+}
