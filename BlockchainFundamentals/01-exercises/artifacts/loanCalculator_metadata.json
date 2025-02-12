@@ -1,0 +1,97 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "interestRateOutOfBoundries",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "loanPeriodTooShort",
+				"type": "error"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "principal",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "rate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "loanYears",
+						"type": "uint256"
+					}
+				],
+				"name": "calculateTotalPayable",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/01-exercises/08-loanCalculator.sol": "loanCalculator"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/01-exercises/08-loanCalculator.sol": {
+			"keccak256": "0x6a1cdf9dc7347c01d79ed26ba4bd76183a053ae880c967bb868378919d3a7461",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://40513660db8ab5c3ecaa3ea4935a0d170dc2402fbc7f47287ea33363d03fc979",
+				"dweb:/ipfs/QmV2esL8ByZZXbaM5tNagAdSni6SCMgHhKuMxAGFVQSYZP"
+			]
+		}
+	},
+	"version": 1
+}
