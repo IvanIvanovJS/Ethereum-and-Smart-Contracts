@@ -1,0 +1,84 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "fahrenheitTemp",
+						"type": "uint256"
+					}
+				],
+				"name": "toCelsius",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "celsiusTemp",
+						"type": "uint256"
+					}
+				],
+				"name": "toFahrenheit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/01-exercises/05-temperatureConversion.sol": "temperatureConversion"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/01-exercises/05-temperatureConversion.sol": {
+			"keccak256": "0x606b71e4723a74ea0cac3351b556753f62dfcb037f70bda0941db05bd7261ddc",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b34bd94430afaeb06ffafae75c192957ade248e06fa7d587f149fdd3c7a9b387",
+				"dweb:/ipfs/Qmb3Ld4GyKvs5SZRxS3dTGhLs2yW4bdYpzq16UJtUUx78t"
+			]
+		}
+	},
+	"version": 1
+}

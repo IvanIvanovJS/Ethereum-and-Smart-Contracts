@@ -1,0 +1,151 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "authorizedLibrerians",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_author",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_publicationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expirationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "_status",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_primaryLibrarian",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_readCount",
+						"type": "uint256"
+					}
+				],
+				"name": "digitalBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "digitalBook1",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "author",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "publicationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "expirationDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "status",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "primaryLibrarian",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "readCount",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/02-exercises/01-digitalLibrary.sol": "digitalLibrary"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/02-exercises/01-digitalLibrary.sol": {
+			"keccak256": "0x006a6ebe60bff1fce8e5707d4cc624e4e86bcc5b6243b02bb5bcee3bb31c4089",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://0c39acd96c0ea36264713b6e1a3c005f0c7af15d515bf55e507c7aa4543bca38",
+				"dweb:/ipfs/QmeFSfKjGRBASVc9WLXDZQZtKJLP5ockuAbz4qBHHGLkih"
+			]
+		}
+	},
+	"version": 1
+}
