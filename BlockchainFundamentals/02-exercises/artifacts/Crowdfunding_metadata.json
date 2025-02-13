@@ -155,7 +155,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BlockchainFundamentals/02-exercises/03-crowdfunding.sol": "Crowdfunding"
+			"BlockchainFundamentals/02-exercises/03-crowdFunding.sol": "Crowdfunding"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -169,7 +169,7 @@
 		"remappings": []
 	},
 	"sources": {
-		"BlockchainFundamentals/02-exercises/03-crowdfunding.sol": {
+		"BlockchainFundamentals/02-exercises/03-crowdFunding.sol": {
 			"keccak256": "0xe0a80601d20412bb31fd314815325f2626d3f784cfa9c17a15053779d172d7e9",
 			"license": "MIT",
 			"urls": [
