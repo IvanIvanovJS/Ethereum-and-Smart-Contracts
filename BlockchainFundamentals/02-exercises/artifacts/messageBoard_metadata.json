@@ -1,0 +1,102 @@
+{
+	"compiler": {
+		"version": "0.8.28+commit.7893614a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "messageToPreview",
+						"type": "string"
+					}
+				],
+				"name": "messagePrewiew",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "messages",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "messageInput",
+						"type": "string"
+					}
+				],
+				"name": "storedMessages",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/02-exercises/01-messageBoard.sol": "messageBoard"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/02-exercises/01-messageBoard.sol": {
+			"keccak256": "0x24919e0f736c3a6c12087a0cccab39e219eb81e82d77cf77b7e23370271697c5",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://950d4f391f567f8c531536a0fd24ddff3681876b8d0ec2b51c66e65e63fc242b",
+				"dweb:/ipfs/QmVJHFYgG9m5DXcWwsdTduk222NJv5oQTZWk2BczDNATN9"
+			]
+		}
+	},
+	"version": 1
+}
