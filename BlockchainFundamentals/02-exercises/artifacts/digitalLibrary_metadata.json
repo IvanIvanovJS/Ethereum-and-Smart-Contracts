@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "address",
@@ -27,49 +32,12 @@
 			{
 				"inputs": [
 					{
-						"internalType": "string",
-						"name": "_title",
-						"type": "string"
-					},
-					{
-						"internalType": "string",
-						"name": "_author",
-						"type": "string"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_publicationDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_expirationDate",
-						"type": "uint256"
-					},
-					{
-						"internalType": "string",
-						"name": "_status",
-						"type": "string"
-					},
-					{
-						"internalType": "address",
-						"name": "_primaryLibrarian",
-						"type": "address"
-					},
-					{
-						"internalType": "uint256",
-						"name": "_readCount",
-						"type": "uint256"
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
 					}
 				],
-				"name": "digitalBook",
-				"outputs": [],
-				"stateMutability": "nonpayable",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "digitalBook1",
+				"name": "books",
 				"outputs": [
 					{
 						"internalType": "string",
@@ -92,9 +60,9 @@
 						"type": "uint256"
 					},
 					{
-						"internalType": "string",
+						"internalType": "enum digitalLibrary.BookStatus",
 						"name": "status",
-						"type": "string"
+						"type": "uint8"
 					},
 					{
 						"internalType": "address",
@@ -108,6 +76,187 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "enum digitalLibrary.BookStatus",
+						"name": "_newStatus",
+						"type": "uint8"
+					}
+				],
+				"name": "changeBookStatus",
+				"outputs": [
+					{
+						"internalType": "enum digitalLibrary.BookStatus",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_author",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_expirationDays",
+						"type": "uint256"
+					},
+					{
+						"internalType": "enum digitalLibrary.BookStatus",
+						"name": "_status",
+						"type": "uint8"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_readCount",
+						"type": "uint256"
+					}
+				],
+				"name": "digitalBook",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "addExpirationDays",
+						"type": "uint256"
+					}
+				],
+				"name": "extendExpirationDate",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					}
+				],
+				"name": "getBookInfo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "title",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "author",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "publicationDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "expirationDate",
+								"type": "uint256"
+							},
+							{
+								"internalType": "enum digitalLibrary.BookStatus",
+								"name": "status",
+								"type": "uint8"
+							},
+							{
+								"internalType": "address",
+								"name": "primaryLibrarian",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "readCount",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct digitalLibrary.EBook",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					}
+				],
+				"name": "readBookCount",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_title",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"name": "setAuthorizedLibrarians",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
@@ -124,7 +273,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"BlockchainFundamentals/02-exercises/01-digitalLibrary.sol": "digitalLibrary"
+			"BlockchainFundamentals/02-exercises/05-digitalLibrary.sol": "digitalLibrary"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -138,12 +287,52 @@
 		"remappings": []
 	},
 	"sources": {
-		"BlockchainFundamentals/02-exercises/01-digitalLibrary.sol": {
-			"keccak256": "0x006a6ebe60bff1fce8e5707d4cc624e4e86bcc5b6243b02bb5bcee3bb31c4089",
+		"@openzeppelin/contracts/utils/Panic.sol": {
+			"keccak256": "0xf7fe324703a64fc51702311dc51562d5cb1497734f074e4f483bfb6717572d7a",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://0c39acd96c0ea36264713b6e1a3c005f0c7af15d515bf55e507c7aa4543bca38",
-				"dweb:/ipfs/QmeFSfKjGRBASVc9WLXDZQZtKJLP5ockuAbz4qBHHGLkih"
+				"bzz-raw://c6a5ff4f9fd8649b7ee20800b7fa387d3465bd77cf20c2d1068cd5c98e1ed57a",
+				"dweb:/ipfs/QmVSaVJf9FXFhdYEYeCEfjMVHrxDh5qL4CGkxdMWpQCrqG"
+			]
+		},
+		"@openzeppelin/contracts/utils/Strings.sol": {
+			"keccak256": "0x44f87e91783e88415bde66f1a63f6c7f0076f2d511548820407d5c95643ac56c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://13a51bc2b23827744dcf5bad10c69e72528cf015a6fe48c93632cdb2c0eb1251",
+				"dweb:/ipfs/QmZwPA47Yqgje1qtkdEFEja8ntTahMStYzKf5q3JRnaR7d"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/Math.sol": {
+			"keccak256": "0xa00be322d7db5786750ce0ac7e2f5b633ac30a5ed5fa1ced1e74acfc19acecea",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://6c84e822f87cbdc4082533b626667b6928715bb2b1e8e7eb96954cebb9e38c8d",
+				"dweb:/ipfs/QmZmy9dgxLTerBAQDuuHqbL6EpgRxddqgv5KmwpXYVbKz1"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SafeCast.sol": {
+			"keccak256": "0x195533c86d0ef72bcc06456a4f66a9b941f38eb403739b00f21fd7c1abd1ae54",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1d578337048cad08c1c03041cca5978eff5428aa130c781b271ad9e5566e1f8",
+				"dweb:/ipfs/QmPFKL2r9CBsMwmUqqdcFPfHZB2qcs9g1HDrPxzWSxomvy"
+			]
+		},
+		"@openzeppelin/contracts/utils/math/SignedMath.sol": {
+			"keccak256": "0xb1970fac7b64e6c09611e6691791e848d5e3fe410fa5899e7df2e0afd77a99e3",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://db5fbb3dddd8b7047465b62575d96231ba8a2774d37fb4737fbf23340fabbb03",
+				"dweb:/ipfs/QmVUSvooZKEdEdap619tcJjTLcAuH6QBdZqAzWwnAXZAWJ"
+			]
+		},
+		"BlockchainFundamentals/02-exercises/05-digitalLibrary.sol": {
+			"keccak256": "0x5ad0b67683df3c98484461103d4d933428b2d0f693124cd2880acd5a0409d93c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fa89403ffcde5ccc7f01665bd1bde9574795774e31740e2ee29350af275684f2",
+				"dweb:/ipfs/QmaATPRbzo4yXfbSV4H5APcP1Wyb8WcdFnaZFDY8XsAPBf"
 			]
 		}
 	},

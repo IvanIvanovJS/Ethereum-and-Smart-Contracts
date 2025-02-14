@@ -11,7 +11,7 @@ contract savingAccount {
     }
     mapping (address => SavingsAccount[]) public database;
     function createAcount (uint256 addedBalance, uint256 lockPeriod) external payable  {
-        
+        addedBalance = msg.value;
         database[msg.sender].push(SavingsAccount({
             balance: addedBalance,
             owner: msg.sender,
@@ -25,7 +25,7 @@ contract savingAccount {
         return((database[user])[index].balance,(database[user])[index].owner,(database[user])[index].creationTime,(database[user])[index].lockPeriod);
     }  
     function withdraw (uint256 amount,address user, uint256 index) external{
-        require(block.timestamp >=((database[msg.sender])[0].creationTime+ database[msg.sender][0].lockPeriod),"You are not eligible to Withdraw"); 
+        require(block.timestamp >=((database[msg.sender])[index].creationTime+ database[msg.sender][index].lockPeriod),"You are not eligible to Withdraw"); 
 
         if ((database[user])[index].balance < amount){
             revert("Balance is insufficient") ;
