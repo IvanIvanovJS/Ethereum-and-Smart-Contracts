@@ -1,0 +1,117 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "listOfsimpleStorage",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfGet",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_newSimpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"BlockchainFundamentals/solidity101/StorageFactory.sol": "StorageFactory"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"BlockchainFundamentals/solidity101/SimpleStorage.sol": {
+			"keccak256": "0x9581f66d633c1731a5e89472f0f183a9696ecf1b1ff7ff96defde83263ecb18c",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://b1b47c1f462dee23b600f1b2dc4bd80d1e957f25b1606d976df7dcad873a151d",
+				"dweb:/ipfs/QmepPDYpQ6VJvCzRuNZ36rNZrQm4wU8yVyg2CKaP1PATRT"
+			]
+		},
+		"BlockchainFundamentals/solidity101/StorageFactory.sol": {
+			"keccak256": "0x60590cb88858929a9459f922c924327b1ac300db209457d3fa67389c8e283e51",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://693ac01fdc50fd37b03b2d7ffe76136abd2e63fe87eb553250543c58445d8a80",
+				"dweb:/ipfs/QmNNrfLc34opB93awY2g7ZGiJe6sLZfrqByEx9qhoc1r1v"
+			]
+		}
+	},
+	"version": 1
+}
